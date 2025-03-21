@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website',  # Add this line to include the website app
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'looktvps.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'looktvps-db',  # Change this to your actual DB name
+        'NAME': 'looktvpsdb',  # Change this to your actual DB name
         'USER': 'postgres',  # Change this to your DB username
         'PASSWORD': 'keyboard1293mousepad',  # Use your actual password
         'HOST': 'looktvps-db.c5cuuq4wgi2r.eu-north-1.rds.amazonaws.com',  # Your RDS endpoint
